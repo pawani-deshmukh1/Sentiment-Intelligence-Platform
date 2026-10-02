@@ -22,23 +22,26 @@ This repository contains the core machine learning and natural language processi
 ```text
 sentiment-intelligence-platform/
 │
-├── data/                  # Contains the raw and preprocessed datasets
+├── data/                  # Raw and preprocessed datasets
+│
 ├── models/                # Serialized ML artifacts (.pkl files)
-├── src/                   
-│   ├── preprocess.py      # Text cleaning, tokenization & lemmatization pipeline
-│   ├── train.py           # Model training, hyperparameter tuning & evaluation
-│   ├── nlp_layer.py       # Rule-based Aspect, Emotion & Explainability logic
-│   └── predict.py         # Full pipeline integration and inference engine
+│
+├── src/
+│   ├── preprocess.py      # Text cleaning, tokenization & lemmatization
+│   ├── train.py           # Model training, tuning & evaluation
+│   ├── nlp_layer.py       # Aspect, Emotion & Explainability logic
+│   └── predict.py         # Full pipeline integration & inference
 │
 ├── requirements.txt       # Python dependencies
 └── README.md              # Project documentation
-
+```
 ---
 
-## **🛠️ Local Setup & Installation**
-- **To run the machine learning engine locally, follow these steps:**
+## 🛠️ Local Setup & Installation
+To run the machine learning engine locally, follow these steps:
 
--**1. Create and activate a virtual environment:**
+**1. Create and activate a virtual environment:**
+```bash
 # Windows
 python -m venv venv
 .\venv\Scripts\activate
@@ -46,21 +49,24 @@ python -m venv venv
 # Mac/Linux
 python3 -m venv venv
 source venv/bin/activate
-
--**2. Install project dependencies:**
+```
+**2. Install project dependencies:**
+```bash
 pip install -r requirements.txt
-
--**3. Execute the CLI Inference Engine:**
+```
+**3. Execute the CLI Inference Engine:**
+```bash
 cd src
 python predict.py
 (Enter a sample review into the terminal to generate a full sentiment and aspect analysis.)
-
+```
 ---
+## 📜 API Response Schema
+The system utilizes a Contract-First Architecture to ensure seamless frontend and backend decoupling. All HTTP POST requests to the future analysis endpoint will return the following strictly typed JSON structure:
 
-## **📜 API Response Schema**
-**The system utilizes a Contract-First Architecture to ensure seamless frontend and backend decoupling. All HTTP POST requests to the future analysis endpoint will return the following strictly typed JSON structure:**
+**JSON**
+
 ```text
-JSON
 {
   "meta": {
     "input_modality": "text", 
@@ -96,13 +102,16 @@ JSON
   }
 }
 
+```
 ---
+## 🚀 Development Roadmap
 
-## **🚀 Development Roadmap**
--**Phase 1 [Completed]: Core TF-IDF + Logistic Regression Model Initialization.**
+* **Phase 1 [Completed]: Core TF-IDF + Logistic Regression Model Initialization.**
 
--**Phase 2 [Completed]: NLP Layer Integration (Aspects, Emotions, Explainability).**
+* **Phase 2 [Completed]: NLP Layer Integration (Aspects, Emotions, Explainability).**
 
--**Phase 3 [Pending]: FastAPI Backend Wrapper & Voice Input Integration.**
+* **Phase 3 [Pending]: FastAPI Backend Wrapper & Voice Input Integration.**
 
--**Phase 4 [Pending]: React-based Analytics Dashboard & UI Development.**
+* **Phase 4 [Pending]: React-based Analytics Dashboard & UI Development.**
+
+---
