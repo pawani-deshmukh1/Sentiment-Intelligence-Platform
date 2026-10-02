@@ -33,7 +33,7 @@ sentiment-intelligence-platform/
 ├── requirements.txt       # Python dependencies
 └── README.md              # Project documentation
 
-🛠️ Local Setup & Installation
+## 🛠️ Local Setup & Installation
 To run the machine learning engine locally, follow these steps:
 
 1. Create and activate a virtual environment:
@@ -53,7 +53,7 @@ cd src
 python predict.py
 (Enter a sample review into the terminal to generate a full sentiment and aspect analysis.)
 
-📜 API Response Schema
+## 📜 API Response Schema
 The system utilizes a Contract-First Architecture to ensure seamless frontend and backend decoupling. All HTTP POST requests to the future analysis endpoint will return the following strictly typed JSON structure:
 
 JSON
@@ -92,7 +92,7 @@ JSON
   }
 }
 
-🚀 Development Roadmap
+## 🚀 Development Roadmap
 Phase 1 [Completed]: Core TF-IDF + Logistic Regression Model Initialization.
 
 Phase 2 [Completed]: NLP Layer Integration (Aspects, Emotions, Explainability).
