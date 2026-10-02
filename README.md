@@ -34,7 +34,7 @@ sentiment-intelligence-platform/
 └── README.md              # Project documentation
 
 ---
-
+</> Markdown
 ## 🛠️ Local Setup & Installation
 To run the machine learning engine locally, follow these steps:
 
