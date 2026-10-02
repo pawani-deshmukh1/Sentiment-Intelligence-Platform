@@ -34,11 +34,11 @@ sentiment-intelligence-platform/
 └── README.md              # Project documentation
 
 ---
-</> Markdown
-## 🛠️ Local Setup & Installation
-To run the machine learning engine locally, follow these steps:
 
-1. Create and activate a virtual environment:
+## **🛠️ Local Setup & Installation**
+- **To run the machine learning engine locally, follow these steps:**
+
+-**1. Create and activate a virtual environment:**
 # Windows
 python -m venv venv
 .\venv\Scripts\activate
@@ -47,19 +47,19 @@ python -m venv venv
 python3 -m venv venv
 source venv/bin/activate
 
-2. Install project dependencies:
+-**2. Install project dependencies:**
 pip install -r requirements.txt
 
-3. Execute the CLI Inference Engine:
+-**3. Execute the CLI Inference Engine:**
 cd src
 python predict.py
 (Enter a sample review into the terminal to generate a full sentiment and aspect analysis.)
 
 ---
 
-## 📜 API Response Schema
-The system utilizes a Contract-First Architecture to ensure seamless frontend and backend decoupling. All HTTP POST requests to the future analysis endpoint will return the following strictly typed JSON structure:
-
+## **📜 API Response Schema**
+**The system utilizes a Contract-First Architecture to ensure seamless frontend and backend decoupling. All HTTP POST requests to the future analysis endpoint will return the following strictly typed JSON structure:**
+```text
 JSON
 {
   "meta": {
@@ -98,11 +98,11 @@ JSON
 
 ---
 
-## 🚀 Development Roadmap
-Phase 1 [Completed]: Core TF-IDF + Logistic Regression Model Initialization.
+## **🚀 Development Roadmap**
+-**Phase 1 [Completed]: Core TF-IDF + Logistic Regression Model Initialization.**
 
-Phase 2 [Completed]: NLP Layer Integration (Aspects, Emotions, Explainability).
+-**Phase 2 [Completed]: NLP Layer Integration (Aspects, Emotions, Explainability).**
 
-Phase 3 [Pending]: FastAPI Backend Wrapper & Voice Input Integration.
+-**Phase 3 [Pending]: FastAPI Backend Wrapper & Voice Input Integration.**
 
-Phase 4 [Pending]: React-based Analytics Dashboard & UI Development.
+-**Phase 4 [Pending]: React-based Analytics Dashboard & UI Development.**
